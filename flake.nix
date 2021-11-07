@@ -16,7 +16,7 @@
             pkgs.nodejs
             pkgs.nodePackages.live-server
             ];
-          shellHook = "fish";
+          # shellHook = "fish";
         };
       });
 }
