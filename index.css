@@ -4,17 +4,34 @@
     padding: 0;
 }
 
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space, 1.5rem);
+}
+
 :root {
     --header-height: 60px;
     --ghost-white: #F8f8ff;
-    --starlight: #fff3bf
+    --starlight: #fff3bf;
+    --dark-blue: #032a4d;
 }
 
 html, body {
     margin: 0;
     min-height: 100vh;
-    background: url("milkyway.jpg") no-repeat center center fixed;
+    /* background: url("milkyway.jpg") no-repeat center center fixed; */
     background-size: cover;
+    background-color: #fcfcff
 }
 
 .body {
@@ -49,6 +66,10 @@ html, body {
     backdrop-filter: opacity(20%);
 }
 
+#main-content {
+    display: flex;
+}
+
 .svg-white {
     filter: invert(98%) sepia(23) saturate(6186) hue-rotate(310deg) brightness(120%) contrast(101%);
 }
@@ -76,6 +97,7 @@ html, body {
 
 .form-label {
     margin: 15px;
+    color: #022443;
 }
 
 #email {
@@ -111,11 +133,22 @@ ul {
     justify-content: space-around;
 }
 
+#showcase {
+    display: flex;
+    /* justify-content: center; */
+    margin: auto;
+}
+
 .product-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 325px;
     margin: 20px;
     border: 4px solid var(--starlight);
+    background-color: var(--dark-blue);
+    color: var(--starlight);
 }
 
 @media screen and (max-width: 850px) {
