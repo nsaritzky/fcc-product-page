@@ -68,6 +68,9 @@ html, body {
 
 #main-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .svg-white {
