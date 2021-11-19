@@ -140,6 +140,8 @@ ul {
     display: flex;
     /* justify-content: center; */
     margin: auto;
+    max-width: 80%;
+    height: auto;
 }
 
 .product-box {
